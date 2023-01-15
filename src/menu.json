@@ -1,0 +1,31 @@
+{
+  "main": [
+    {
+      "name": "Lasaña tradicional",
+      "price": 10.0,
+      "description": "Lasaña de carne con salsa de tomate y queso"
+    },
+    {
+      "name": "Lasaña de verduras",
+      "price": 10.0,
+      "description": "Lasaña de verduras con salsa de tomate y queso"
+    },
+    {
+      "name": "Lasaña de pollo",
+      "price": 10.0,
+      "description": "Lasaña de pollo con salsa de tomate y queso"
+    }
+  ],
+  "extras": [
+    {
+      "name": "Papas fritas",
+      "description": "Papas fritas con salsa de tomate y queso",
+      "price": 2.0
+    },
+    {
+      "name": "Papas fritas con queso",
+      "description": "Papas fritas con queso",
+      "price": 2.0
+    }
+  ]
+}
