@@ -1,9 +1,5 @@
 <script setup>
-import { ref } from 'vue'
 import SectionMenu from './components/SectionMenu.vue'
-import Menu from './menu.json'
-const lasagnas = ref(Menu.main)
-const extras = ref(Menu.extras)
 </script>
 
 <template>
@@ -15,8 +11,8 @@ const extras = ref(Menu.extras)
         La mejor lasagna que probaras en tu vida
       </p>
     </header>
-    <SectionMenu name="Lasañas" :elements="lasagnas" />
-    <SectionMenu name="Extras" :elements="extras" />
+    <SectionMenu name="Lasañas" :elements="menu?.main || []" />
+    <SectionMenu name="Extras" :elements="menu?.extras || []" />
 
     <footer class="flex flex-row-reverse place-items-end justify-between mt-6">
       <img
@@ -39,6 +35,16 @@ const extras = ref(Menu.extras)
   </main>
 </template>
 
+<script>
+import Menu from './menu.json'
+export default {
+  data() {
+    return {
+      menu: Menu
+    }
+  }
+}
+</script>
 <style scoped>
 .page_title {
   text-stroke: 3px #000000;

@@ -10,7 +10,7 @@ module.exports = {
         secular: ['Secular One', 'sans-serif']
       },
       colors: {
-        primary: 'hsl(0, 0%, 100%)'
+        primary: '#ffb798'
       }
     }
   },
